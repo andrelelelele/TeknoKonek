@@ -1,0 +1,20 @@
+@import "../../style.scss";
+
+.home{
+  @include themify($themes) {
+    padding: 20px 70px;
+    background:
+        url("https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/387158137_4233532383447903_5959741957663796140_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeGwgyIAO4wzQs0WfUqVUlSbUBx_-Ck5YsZQHH_4KTlixi5BuQCAO3gqKfqOeEaWJgecRjNKkCZ_OvnCGnsqHI5d&_nc_ohc=nTMau7qFSwAAX9KBhQ3&_nc_ht=scontent.fceb2-2.fna&oh=00_AfDcS48rb7gWdYpyrx-ScVFwj6qO9rZ8KrdoPGYMQ8ECRQ&oe=652AC1E0")
+          center;
+          background-attachment: fixed;
+          background-size: cover;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    @include tablet{
+      padding: 20px;
+    }
+  }
+}

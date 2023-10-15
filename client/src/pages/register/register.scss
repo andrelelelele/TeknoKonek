@@ -1,0 +1,95 @@
+.register {
+  height: 100vh;
+  //background-color: rgb(255, 243, 176);
+  background: linear-gradient(rgba(46, 29, 1, 0.655), rgba(46, 29, 1, 0.655)),
+        url("https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/368244274_688315193322738_4002362965583533997_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFuqWP7L8ZwwqIN8pY-u-B7eOjjvWaVWyF46OO9ZpVbIWzku89NFzXzhYKdgAI4lkY-xS5XR1dmDLy6qrXIlO4Z&_nc_ohc=pdpXsdwfWRIAX8JqGP9&_nc_ht=scontent.fceb1-2.fna&oh=00_AfDV1nV9bvfXujUu_BZG2oogITr_79N4CEKZJCXgeWpYOQ&oe=652F92A1")
+          center;
+      background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(84, 54, 1, 0), rgba(84, 5, 1, 0)),
+        url("https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/391614806_4236720546462420_2673812869012503874_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG5-kaRvh69rAZxEdXsoY3aUql6jC0-btpSqXqMLT5u2p_WtZaYxmGlZkj-lEY40lRBL9iT3c-UfHEUceDTHtnI&_nc_ohc=8CFUTPBDWWcAX_aRW42&_nc_ht=scontent.fceb1-3.fna&oh=00_AfAxRk_ItXjyZ59b-aZnAO9M5skscdg6yPU59MWDqYm1gw&oe=652F1383")
+          center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+        color: rgba(255, 255, 255, 0); /* Transparent white */
+      }
+      
+      p {
+        color: rgba(255, 255, 255, 0); /* Transparent white */
+      }
+
+      span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0); /* Transparent white */
+      }
+      
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(144, 1, 1);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      
+
+      h1 {
+      color: #555;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        input {
+        border: none;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 10px;
+        }
+        
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #900C27;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

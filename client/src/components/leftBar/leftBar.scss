@@ -1,0 +1,79 @@
+@import "../../style.scss";
+
+.leftBar {
+  @include themify($themes) {
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    
+    background:
+        url("https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/387158137_4233532383447903_5959741957663796140_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeGwgyIAO4wzQs0WfUqVUlSbUBx_-Ck5YsZQHH_4KTlixi5BuQCAO3gqKfqOeEaWJgecRjNKkCZ_OvnCGnsqHI5d&_nc_ohc=nTMau7qFSwAAX9KBhQ3&_nc_ht=scontent.fceb2-2.fna&oh=00_AfDcS48rb7gWdYpyrx-ScVFwj6qO9rZ8KrdoPGYMQ8ECRQ&oe=652AC1E0")
+          center;
+          background-attachment: fixed;
+          background-size: cover;
+    
+
+    @include mobile{
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      padding: 20px;
+      color: white !important;
+
+      hr {
+        margin: 20px 0px;
+        border: none;
+        height: 0.5px;
+        background-color: themed("border");
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          font-size: 12px;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 30px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
